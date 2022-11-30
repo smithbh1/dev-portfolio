@@ -19,9 +19,9 @@ nav ul li a{
     text-decoration: none;
     
 }
-nav ul li:hover{
-  background-color:rgba(83, 108, 219, 0.4);
-  color:rgb(20, 19, 19);
+nav ul li a:hover{
+  text-decoration: none;
+  color: #fff;
 }
 
 .hero{
@@ -51,6 +51,11 @@ nav ul li:hover{
 .top-right-corner,
 .bottom-left-corner,
 .bottom-right-corner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 20vw;
     background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,19 +65,27 @@ nav ul li:hover{
     position: absolute;
 
 }
+.showcase-container h2{
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    z-index: 3;
+}
 .col-md-6{
     padding-left: 0;
     padding-right: 0;
 }
+
 .img-background{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 20vw;
+    height: 100%;
+    z-index: 2;
 }
 .top-left-corner .img-background{
-    background-color: rgba(37, 81, 62, 0.4);
+    background: rgba(37, 81, 62, 0.4);
 }
 .top-right-corner .img-background{
     background-color: rgba(54, 100, 110, 0.4);
@@ -84,15 +97,15 @@ nav ul li:hover{
     background-color: rgba(83, 108, 219, 0.4);
 }
 
-.top-left-corner:hover{
+.top-left-corner{
     background-image: url('/images/top-left.jpg');
 }
-.top-right-corner:hover{
+.top-right-corner{
     background-image: url('/images/top-right.jpg');
 }
-.bottom-left-corner:hover{
+.bottom-left-corner{
     background-image: url('/images/bottom-left.jpg');
 }
-.bottom-right-corner:hover{
+.bottom-right-corner{
     background-image: url('/images/bottom-right.jpg');
 }
