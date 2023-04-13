@@ -1,0 +1,10 @@
+<ul class="list-group">
+    <li *ngFor ="let info of InfoReceived1" class="list-group-info">{{info}}</li>
+</ul>
+
+<form #frm = "ngForm">
+    <div class="">
+        <input type="text" name="username" ngModel>
+        <button type="button" name="button">Update</button>
+    </div>
+</form>

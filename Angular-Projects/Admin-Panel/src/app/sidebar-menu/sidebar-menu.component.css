@@ -1,0 +1,48 @@
+.transition{
+    transition: all .4s linear;
+}
+.sidebar-menu{
+    height: 100%;
+    max-height: 100vh;
+    background-color: rgb(32, 32, 32);
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 1px 1px rgb(122, 122, 122);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.sidebar-menu ul{
+    list-style-type: none; 
+    padding-inline-start: 0;
+    
+}
+
+.sidebar-menu ul li{
+    cursor: pointer;
+    padding: 25px;
+    background: linear-gradient(90deg, rgba(62,9,121,0) 1%, rgba(255,0,0,0.0) 100%);
+}
+.sidebar-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-size: .9em;
+}
+.sidebar-menu ul li:hover{
+    background: linear-gradient(90deg, rgba(32, 32, 32, 1) .5%,rgba(62,9,121,.5) 5%, rgba(255,0,0,0.5) 100%);
+}
+.sidebar-menu ul li:hover a{
+    color: #fff;
+}
+.sidebar-menu ul li.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    max-width: 90px;
+}

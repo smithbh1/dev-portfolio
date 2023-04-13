@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Ticket Creation</h1>
+    <form #ticket="ngForm" (ngSubmit)="submit(ticket)">
+        <div class="form-group">
+            <label for="priority">Priority</label><br>
+            <select name="priority" class="form-control" ngModel>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select> 
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="client-name">Client</label>
+            <input required minlength="2" maxlength="50" type="text" name="client-name" ngModel>
+    
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="issue">Issue</label>
+            <input type="text" name="issue" ngModel>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="team">Issue</label>
+            <input type="text" name="team" ngModel>
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary" type="submit">Create</button>
+    </form>
+</div>
