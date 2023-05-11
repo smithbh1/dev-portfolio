@@ -8,6 +8,7 @@ import { UserInfoService } from "../user-info.service";
   providers: [UserInfoService]
 })
 export class AccountComponent {
+  
   infoReceived1: string[]=[];
   infoReceived2: string[]=[];
   infoReceived3: string[]=[];
@@ -22,5 +23,5 @@ export class AccountComponent {
     this.infoReceived3 = this.uinfo.getInfo3();
   }
 
-  constructor(private uinfo: UserInfoService){ }
+  constructor(private uinfo: UserInfoService){}
 }
